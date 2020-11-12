@@ -16,6 +16,3 @@ function store() {
 		alert(error);
 	})
 }
-
-
-function delete()
