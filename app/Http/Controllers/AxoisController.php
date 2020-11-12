@@ -28,5 +28,8 @@ class AxoisController extends Controller
 
     function destroy(Request $r){
     	
+        DB::table('testtable')->where('id',$r->input('id'))->delete();
+        
+        return 'delete done';
     }
 }

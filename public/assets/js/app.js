@@ -16,3 +16,20 @@ function store() {
 		alert(error);
 	})
 }
+
+function del(id){
+	let del = confirm('Are you sure to delete paramently ? ');
+	let data = {
+		id:id
+	}
+	if (del ==true) {
+		axios.post('/delete',data)
+		.then(function(response){
+			alert(response.data);
+		})
+		.catch(function(error){
+			alert(error);
+		})
+	}
+
+}
